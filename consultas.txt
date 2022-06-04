@@ -1,0 +1,5 @@
+	@Query(value="SELECT max(product_stock),product_name,product_id FROM products_konecta.products limit 1", nativeQuery=true)
+	Object findMaxStock();
+	
+	@Query(value="SELECT max(num_of_sold),product_name,product_id FROM products_konecta.products limit 1", nativeQuery=true)
+	Object findMaxSales();
